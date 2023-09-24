@@ -1,0 +1,30 @@
+.menu-link.active, .menu-link:hover, .telegram {
+    background-color: #4b6d92;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+
+.telegram {
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+}

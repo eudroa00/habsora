@@ -1,0 +1,83 @@
+header h1 {
+    margin: 0;
+}
+
+h4 {
+    margin-top: 0;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+/* Words of Yeshua / The Father / Angels */
+.y-q {
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    color: #333;
+    background-color: #d7dde5;
+    padding: 15px 20px 15px 20px;
+    border-radius: 2px;
+}
+
+/* Words of any ADAM */
+.a-q {
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    color: #333;
+    background-color: #eae7d6;
+    padding: 15px 20px 15px 20px;
+    border-radius: 2px;
+}
+
+/* Words of PILATE*/
+.p-q {
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    color: #333;
+    background-color: #e9d1d1;
+    padding: 15px 20px 15px 20px;
+    border-radius: 2px;
+}
+
+/* Tanach quote (in translation)*/
+.b-q {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    font-size: 25px;
+    color: #333;
+    background-color: #d7dde5;
+    padding: 10px 40px 10px 40px;
+    border-radius: 2px;
+}
+
+/* Quote in HEBREW */
+.h-q {
+    font-family: 'Noto Serif Hebrew', serif;
+    font-size: 30px;
+    padding: 5px 40px 5px 40px;
+    text-align: center;
+}
+
+/* Tag to underlite text */
+u {
+    text-decoration: underline rgb(159, 172, 192);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+/* Ident text */
+.i {
+    padding-left: 20px;
+}
+
+/* Center text */
+.c {
+    text-align: center;
+}
