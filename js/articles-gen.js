@@ -57,9 +57,25 @@ function setActiveLink() {
   });
 }
 
-// Yet to be developed: autoscroll of the index based on article being displayed
-function scrollIndex() {
-  const indexArea = document.getElementById('index');
+function autoScrollIndex() {
+  const index = document.getElementById('index');
+  const viewportHeight = window.innerHeight;
+
+  let scrollYIndex = index.scrollTop; 
+  const menuLinks = document.querySelectorAll('.menu-link');
+
+  menuLinks.forEach((link) => {
+    if (link.classList.contains('active')) {
+      const linkRect = link.getBoundingClientRect();
+      let distanceTop = linkRect.top;
+
+      if (distanceTop >= 0.75 * viewportHeight) {
+        index.scrollTop += 60;
+      } else if (distanceTop <= 0.15 * viewportHeight && scrollYIndex > 0) {
+        index.scrollTop -= 60;
+      }
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -78,6 +94,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
   window.addEventListener('scroll', setActiveLink);
-  window.addEventListener('scroll', scrollIndex);
+  window.addEventListener('scroll', autoScrollIndex);
   setActiveLink();
 });

@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   const sidebar = document.getElementById('index');
+  //console.log(sidebar);
   const toggleButton = document.getElementById('toggleSidebarButton');
   const menuLinks = document.querySelectorAll('.menu-link'); // This line of code is not working ;(
 
-  console.log(toggleButton);
   function closeSidebar() {
     sidebar.style.left = '-280px';
   }

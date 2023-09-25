@@ -82,7 +82,7 @@ u {
     text-align: center;
 }
 
-@media (min-width: 769px) and (max-width: 1300px) {
+@media (min-width: 769px) and (max-width: 1400px) {
     .y-q, .a-q, .p-q {
         font-size: 20px;
     } 
