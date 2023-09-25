@@ -1,8 +1,12 @@
-.menu-link.active, .menu-link:hover, .telegram {
+.menu-link.active, .menu-link.active:hover, .telegram {
     background-color: #4b6d92;
     font-size: 20px;
     text-shadow: 1px 1px 1px black;
     color: white;
+}
+
+.menu-link:hover {
+    background-color: #6b7075;
 }
 
 .telegram {
@@ -20,7 +24,7 @@ li {
 }
 
 a {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #fff;
     font-size: 16px;
@@ -31,13 +35,18 @@ a {
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
+    
+    aside {
+        padding: 10px;
+    }
+    
     a {
         font-size: 15px;
     }
     
     .menu-link.active,
-        .menu-link:hover,
-        .telegram {
-            font-size: 17px;
-        }
+    .menu-link.active:hover,
+    .telegram {
+        font-size: 17px;
+    }
 }
