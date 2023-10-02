@@ -1,5 +1,7 @@
 header h1 {
     margin: 0;
+    font-size: 30px;
+    height: 30px;
 }
 
 h4 {
@@ -14,6 +16,10 @@ h3 {
 
 p {
     margin-bottom: 0px;
+}
+
+.index-text {
+    margin:0;
 }
 
 /* Words of Yeshua / The Father / Angels */
