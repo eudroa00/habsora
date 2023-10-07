@@ -1,7 +1,6 @@
 header h1 {
     margin: 0;
     font-size: 30px;
-    height: 30px;
 }
 
 h4 {
@@ -91,5 +90,5 @@ u {
 @media (min-width: 769px) and (max-width: 1400px) {
     .y-q, .a-q, .p-q {
         font-size: 20px;
-    } 
+    }
 }
