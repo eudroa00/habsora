@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Temporary fix to the bug in this code ;(
   main.addEventListener('click', function(){
-    if (sidebar.style.left === '0px' || sidebar.style.left === '') {
+    if (window.innerWidth <= 1200 && sidebar.style.left === '0px') {
       closeSidebar();
       toggleButton.textContent = 'Índice';
     }
