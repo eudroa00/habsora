@@ -38,6 +38,7 @@ aside {
   padding: 20px;
   position: fixed;
   overflow-y: auto;
+  z-index: 2;
 }
 
 aside::-webkit-scrollbar {
@@ -62,6 +63,7 @@ main {
 }
 
 .textbox {
+  position: relative;
   max-width: 900px;
   margin-bottom: 2rem;
   padding: 2rem;
@@ -96,7 +98,7 @@ main {
 
   .textbox {
     margin-bottom: 1rem;
-    padding: 30px 15px 30px 15px;
+    padding: 40px 15px 30px 15px;
   }
 
   #toggleSidebarButton {

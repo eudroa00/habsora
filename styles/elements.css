@@ -27,6 +27,19 @@
     display: inline-block;
 }
 
+.textbox button {
+  position: absolute;
+  top: 10px; /* Adjust the top position to control the vertical placement */
+  right: 10px; /* Adjust the right position to control the horizontal placement */
+  /* Other styling properties for your button */
+  background-color: #c4cfda;
+  color: #333333;
+  border: 0px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
 ul {
     list-style: none;
     margin-top: 60px;
@@ -64,4 +77,12 @@ a {
     .telegram {
         font-size: 17px;
     }
+}
+
+@media (max-width: 769px){
+    .textbox button {
+        top: 7px;
+        right: 7px;
+    }
+
 }

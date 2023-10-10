@@ -4,6 +4,8 @@ function createArticle(articleData, articlesContainer) {
   const title = document.createElement('h3');
   const location = document.createElement('h4');
   const content = document.createElement('p');
+  const button = document.createElement('button');
+  button.textContent = 'Tabla';
 
   title.id = articleData.title
     .replace(/[^\w\s-]/g, '')
@@ -14,13 +16,35 @@ function createArticle(articleData, articlesContainer) {
   location.textContent = articleData.location;
   content.innerHTML = articleData.content;
 
+  const imgSource = `img/${title.id}.png`;
+  button.addEventListener('click',()=>openModal(imgSource));
+
   article.appendChild(title);
+  article.appendChild(button);
   article.appendChild(location);
   article.appendChild(content);
   articlesContainer.appendChild(article);
 
   return title;
 }
+
+var modal = document.getElementById("myModal");
+
+function openModal(imageSource) {
+  const modalImg = document.getElementById("img01");
+  const captionText = document.getElementById("caption");
+
+  modal.style.display = "block";
+  modalImg.src = imageSource;
+  captionText.innerHTML = '';
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
 
 function createNavigationItem(articleData, navIndex, title) {
   const li = document.createElement('li');
