@@ -45,6 +45,14 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+// Add an event listener for clicks on the modal overlay
+modal.addEventListener("click", function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+
 
 function createNavigationItem(articleData, navIndex, title) {
   const li = document.createElement('li');
