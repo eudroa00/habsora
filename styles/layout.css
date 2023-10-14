@@ -15,7 +15,7 @@ header {
 }
 
 .menu-header {
-  width: 260px;
+  width: 250px;
   height: 62px;
   padding-left: 10px;
   background-color: #3b3b3b;
@@ -42,7 +42,19 @@ aside {
 }
 
 aside::-webkit-scrollbar {
-  display: none;
+  width: 12px; /* Width of the vertical scrollbar */
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the scrollbar thumb on hover */
+}
+
+aside::-webkit-scrollbar-track {
+  background: #333; /* Color of the scrollbar track */
 }
 
 .content {
