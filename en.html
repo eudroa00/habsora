@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Harmony of the 4 gospels</title>
+
+        <link rel="stylesheet" href="./styles/layout.css">
+        <link rel="stylesheet" href="./styles/texts.css">
+        <link rel="stylesheet" href="./styles/elements.css">
+        <link rel="stylesheet" href="./styles/modal.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Inter&family=Noto+Serif+Hebrew:wght@500&family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="horizontal-display">
+
+            <aside id="index">
+                <div class="menu-header">
+                    <h2 class="index-text">Index</h2>
+                </div>
+                <ul>
+                </ul>
+            </aside>
+
+            <button id="toggleSidebarButton">Index</button>
+
+            <div class="content">
+
+                <header>
+                    <h1>Harmony of the 4 gospels</h1>
+                    <div class="language-selector">
+                        <a href="index.html" class="flag-link">
+                            <img src="es.png" alt="Spanish Flag">
+                        </a>
+                        <a href="en.html" class="flag-link">
+                            <img src="gb.png" alt="English Flag">
+                        </a>
+                    </div>
+                </header>                  
+
+                <main>
+                    <article id="articles-container"></article>
+                </main>
+
+            </div>
+        </div>
+    </body>
+
+    <script src="./js/articles-en-gen.js"></script>
+    <script src="./js/aside.js"></script>
+
+</html>
