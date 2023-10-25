@@ -1,18 +1,30 @@
 body {
-  background-color: #cecece;
+  background-color: #aaa9a9;
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
   font-size: 22px;
 }
 
+/* Style the header */
 header {
-  background-color: #3b3b3b;
+  background-color: #363636;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
   width: 100%;
 }
+
+.language-selector {
+  text-align: center;
+  margin-top: 10px; /* Adjust the spacing as needed */
+}
+
+.flag-link {
+  display: inline;
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
 
 .menu-header {
   width: 250px;
