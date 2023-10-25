@@ -1,6 +1,7 @@
 header h1 {
+    font-family: 'Fondamento', cursive;
     margin: 0;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 h4 {
@@ -26,7 +27,7 @@ p {
     font-family: 'PT Serif', serif;
     font-size: 25px;
     color: #333;
-    background-color: #d7dde5;
+    background-color: #cbdcf5;
     padding: 15px 20px 15px 20px;
     border-radius: 2px;
 }
@@ -36,7 +37,7 @@ p {
     font-family: 'PT Serif', serif;
     font-size: 25px;
     color: #333;
-    background-color: #eae7d6;
+    background-color: #f1d4ae;
     padding: 15px 20px 15px 20px;
     border-radius: 2px;
 }
@@ -57,7 +58,7 @@ p {
     text-align: center;
     font-size: 25px;
     color: #333;
-    background-color: #d7dde5;
+    background-color: #c3d5ee;
     padding: 10px 40px 10px 40px;
     border-radius: 2px;
 }
@@ -72,7 +73,7 @@ p {
 
 /* Tag to underlite text */
 u {
-    text-decoration: underline rgb(159, 172, 192);
+    text-decoration: underline rgb(122, 134, 151);
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
 }
