@@ -67,6 +67,61 @@ a {
     border-radius: 5px;
 }
 
+.completion {
+    display: block;
+    height: 30px;
+    width: 500px;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+}
+
+.completion-status {
+    display: block;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.completion-text {
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.matthew{
+    width: 10%;
+}
+
+.mark {
+    width: 10%;
+}
+
+.luke{
+    width: 10%;
+}
+
+.john{
+    width: 10%;
+}
+
+.percentage {
+    font-size: 13px;
+    margin:0px;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.textos{
+    display:block;
+    position: absolute;
+    right:0;
+}
+
 @media (min-width: 769px) and (max-width: 1400px) {
     
     aside {
