@@ -87,6 +87,17 @@ a {
     right: 0;
 }
 
+.completion-explained{
+    display: block;
+    position: relative;
+    margin:0;
+    font-size: 15px;
+    padding-top: 5px;
+    left: 0;
+    color:#4b6d92;
+    display: none;
+}
+
 .completion-text {
     margin-left: 10px;
     margin-top: 6px;
@@ -144,5 +155,7 @@ a {
         top: 7px;
         right: 7px;
     }
-
+    .completion{
+        width: 300px;
+    }
 }

@@ -3,3 +3,5 @@ todo.json
 previous-sections.json
 types.md
 /node_modules
+package.json
+package-lock.json
