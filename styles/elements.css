@@ -66,7 +66,12 @@ a {
     transition: background-color 0.5s ease;
     border-radius: 5px;
 }
-
+td, tr {
+    padding: 0;
+}
+td{
+    height: 30px
+}
 .completion {
     display: block;
     height: 30px;
@@ -92,7 +97,7 @@ a {
     position: relative;
     margin:0;
     font-size: 15px;
-    padding-top: 5px;
+    padding-top: 6px;
     left: 0;
     color:#4b6d92;
     display: none;
