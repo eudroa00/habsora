@@ -79,7 +79,7 @@ function createArticle(articleData, articlesContainer) {
   }
   
   document.addEventListener('DOMContentLoaded', function () {
-    fetch('data_en.json')
+    fetch('/json/data_en.json')
       .then((response) => response.json())
       .then((data) => {
         const articlesContainer = document.getElementById('articles-container');

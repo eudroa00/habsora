@@ -32,7 +32,7 @@ function updateStatus(data) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('completion.json')
+  fetch('/json/completion.json')
     .then((res) => res.json())
     .then((data) => {
       updateStatus(data);

@@ -111,7 +111,7 @@ function autoScrollIndex() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  fetch('data.json')
+  fetch('/json/data.json')
     .then((response) => response.json())
     .then((data) => {
       const articlesContainer = document.getElementById('articles-container');
