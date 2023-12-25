@@ -5,3 +5,5 @@ types.md
 /node_modules
 package.json
 package-lock.json
+comp.js
+.gitignore

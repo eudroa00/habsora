@@ -29,7 +29,7 @@ const E5value = sheet[E5].v;
 console.log(D2value);
 ///   HANDLE THE JSON   ///
 
-const dataObject = JSON.parse(fs.readFileSync('./completion.json', 'utf8'));
+const dataObject = JSON.parse(fs.readFileSync('./json/completion.json', 'utf8'));
 
 dataObject.completionMatthew = Math.floor(D2value * 100) + '%';
 dataObject.completionMark = Math.floor(D3value * 100) + '%';
@@ -43,4 +43,4 @@ dataObject.fromJohn = E5value;
 console.log(dataObject.completionMatthew);
 const dataString = JSON.stringify(dataObject, null, 2);
 
-fs.writeFileSync('./completion.json', dataString);
+fs.writeFileSync('./json/completion.json', dataString);

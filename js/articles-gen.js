@@ -4,8 +4,6 @@ function createArticle(articleData, articlesContainer) {
   const title = document.createElement('h3');
   const location = document.createElement('h4');
   const content = document.createElement('p');
-  const button = document.createElement('button');
-  button.textContent = 'Tabla';
 
   title.id = articleData.title
     .replace(/[^\w\s-]/g, '')
@@ -17,10 +15,18 @@ function createArticle(articleData, articlesContainer) {
   content.innerHTML = articleData.content;
 
   const imgSource = `img/${title.id}.png`;
-  button.addEventListener('click',()=>openModal(imgSource));
+  const image = new Image();
 
+  image.onload = ()=>{
+    const button = document.createElement('button');
+    button.textContent = 'Tabla';
+    button.addEventListener('click',()=>openModal(imgSource));
+    article.appendChild(button);
+  }
+
+  image.src = imgSource;
+  
   article.appendChild(title);
-  article.appendChild(button);
   article.appendChild(location);
   article.appendChild(content);
   articlesContainer.appendChild(article);
