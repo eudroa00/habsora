@@ -61,19 +61,36 @@ body{
     line-height: 40px;
     font-family: 'SBL', sans-serif;
 }
+.title{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 55px;
+}
 
 .y-q{
     background-color: rgba(135, 191, 199, 0.5);
     padding: 10px;
+    width: fit-content;
 }
 .a-q{
     background-color: rgba(165, 72, 72, 0.3);
     padding: 10px;
+    width: fit-content;
 }
 .m-q{
     background-color: rgb(122, 179, 122, 0.5);
     padding: 10px;
+    width: fit-content;
 }
+
+.close-top{
+    margin-bottom: 10px;
+}
+.close-bottom{
+    margin-top: 10px;
+}
+
 .small-space{
     height: 10px;
     width: fit-content;
