@@ -98,6 +98,23 @@ main {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
 }
 
+.textbox ul {
+  list-style-type: disc;
+  margin: 20px;
+}
+
+.textbox a {
+  display: inline;
+  text-decoration: none;
+  color: blue;
+  font: inherit;
+  padding: 0px;
+}
+
+.textbox a:hover {
+  text-decoration: underline;
+}
+
 /* Media Query for mobile phone displays */
 @media (max-width: 768px) {
   
