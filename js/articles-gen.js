@@ -1,4 +1,4 @@
-function createArticle(articleData, articlesContainer) {
+function createArticle(articleData, index, articlesContainer) {
   const article = document.createElement('article');
   article.className = 'textbox';
   const title = document.createElement('h3');
@@ -10,22 +10,22 @@ function createArticle(articleData, articlesContainer) {
     .trim()
     .replace(/\s+/g, '-')
     .toLowerCase();
-  title.textContent = articleData.title;
+  title.textContent = `${index + 1}. ` + articleData.title;
   location.textContent = articleData.location;
   content.innerHTML = articleData.content;
 
   const imgSource = `img/${title.id}.png`;
   const image = new Image();
 
-  image.onload = ()=>{
+  image.onload = () => {
     const button = document.createElement('button');
     button.textContent = 'Tabla';
-    button.addEventListener('click',()=>openModal(imgSource));
+    button.addEventListener('click', () => openModal(imgSource));
     article.appendChild(button);
-  }
+  };
 
   image.src = imgSource;
-  
+
   article.appendChild(title);
   article.appendChild(location);
   article.appendChild(content);
@@ -34,39 +34,37 @@ function createArticle(articleData, articlesContainer) {
   return title;
 }
 
-var modal = document.getElementById("myModal");
+var modal = document.getElementById('myModal');
 
 function openModal(imageSource) {
-  const modalImg = document.getElementById("img01");
-  const captionText = document.getElementById("caption");
+  const modalImg = document.getElementById('img01');
+  const captionText = document.getElementById('caption');
 
-  modal.style.display = "block";
+  modal.style.display = 'block';
   modalImg.src = imageSource;
   captionText.innerHTML = '';
 }
 
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName('close')[0];
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
+span.onclick = function () {
+  modal.style.display = 'none';
+};
 
 // Add an event listener for clicks on the modal overlay
-modal.addEventListener("click", function(event) {
+modal.addEventListener('click', function (event) {
   if (event.target === modal) {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
 });
 
-
-
-function createNavigationItem(articleData, navIndex, title) {
+function createNavigationItem(articleData, index, navIndex, title) {
   const li = document.createElement('li');
   const anchor = document.createElement('a');
   anchor.href = '#' + title.id;
   anchor.className = 'menu-link';
   anchor.setAttribute('data-section', title.id);
-  anchor.textContent = articleData.title;
+  anchor.textContent = `${index + 1}. ` + articleData.title;
   li.appendChild(anchor);
   navIndex.appendChild(li);
 }
@@ -99,7 +97,7 @@ function autoScrollIndex() {
   const index = document.getElementById('index');
   const viewportHeight = window.innerHeight;
 
-  let scrollYIndex = index.scrollTop; 
+  let scrollYIndex = index.scrollTop;
   const menuLinks = document.querySelectorAll('.menu-link');
 
   menuLinks.forEach((link) => {
@@ -125,9 +123,9 @@ document.addEventListener('DOMContentLoaded', function () {
         .getElementById('index')
         .getElementsByTagName('ul')[0];
 
-      data.forEach((articleData) => {
-        const title = createArticle(articleData, articlesContainer);
-        createNavigationItem(articleData, navIndex, title);
+      data.forEach((articleData, index) => {
+        const title = createArticle(articleData, index, articlesContainer);
+        createNavigationItem(articleData, index, navIndex, title);
       });
     });
 
