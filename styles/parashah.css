@@ -3,95 +3,203 @@
     src: url('../SBL_Hbrw.ttf');
 }
 
-html{
+html {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color: rgb(107, 83, 68);
+    background-color: rgb(70, 54, 45);
     display: flex;
     justify-content: center;
 }
 
-.container{
+hr {
+    height: 1px;
+    border-width: 0;
+    background-color: rgb(161, 130, 112)
+}
+
+.container {
     margin-top: 60px;
     height: 7800px;
-    width: 1100px;
+    width: 90%;
+    /* Sets the container to take up 90% of the screen width */
+    max-width: 1100px;
+    min-width: 350px;
+    /* Keeps a maximum width cap for larger screens */
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-.scroll-top{
-    width: 1100px;
-    height: 360px;
-    background-image: url(../scroll_top_bk.png);
+.scroll-top,
+.scroll-body,
+.scroll-bottom,
+.content {
+    width: 100%;
+    /* Adjusts all inner elements to 100% of the container's width */
+    max-width: 1100px;
+    /* Optional: max width for larger screens */
     background-size: contain;
 }
-.scroll-body{
-    flex-grow: 1;
-    width: 1100px;
-    background-image: url(../scroll_body_bk.png);
-    background-size:contain;
+
+.scroll-top {
+    width: 100%;
+    aspect-ratio: 1100 / 360;
+    background-image: url(../scroll_top_bk.png);
 }
 
-.scroll-bottom{
-    width: 1100px;
+.scroll-body {
+    flex-grow: 1;
+    background-image: url(../scroll_body_bk.png);
+}
+
+.scroll-bottom {
     height: 275px;
     background-image: url(../scroll_bottom_bk.png);
-    background-size: contain;
     position: relative;
     bottom: 190px;
 }
 
-.content{
+.content {
     position: absolute;
-    width: 1100px;
     display: flex;
     justify-content: center;
     margin-top: 190px;
+    width: 100%;
+    /* Ensures the content takes the full width of the container */
 }
 
-.divo{
-    width: 870px;
+.divo {
+    width: 80%;
     direction: rtl;
     font-size: 35px;
     line-height: 40px;
     font-family: 'SBL', sans-serif;
 }
-.title{
+
+.title {
     text-align: center;
     font-size: 60px;
     margin-top: 10px;
-    margin-bottom: 55px;
 }
 
-.y-q{
+.par {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.perek {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.y-q {
     background-color: rgba(135, 191, 199, 0.5);
     padding: 10px;
     width: fit-content;
 }
-.a-q{
-    background-color: rgba(165, 72, 72, 0.3);
-    padding: 10px;
-    width: fit-content;
-}
-.m-q{
-    background-color: rgb(122, 179, 122, 0.5);
+
+.a-q {
+    background-color: rgba(122, 179, 122, 0.5);
     padding: 10px;
     width: fit-content;
 }
 
-.close-top{
+.r-q {
+    background-color: rgba(192, 63, 63, 0.5);
+    padding: 10px;
+    width: fit-content;
+}
+
+.close-top {
     margin-bottom: 10px;
 }
-.close-bottom{
+.close-bottom {
     margin-top: 10px;
 }
 
-.small-space{
-    height: 10px;
+.small-space {
+    height: 20px;
     width: fit-content;
+}
+
+.two-columns {
+    display: flex;
+}
+
+.verses {
+    flex: 1;
+}
+
+.index {
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.marker {
+    visibility: hidden;
+}
+
+.number-tag {
+    position: absolute;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        margin-top: 100px;
+    }
+
+    .index {
+        width: 20px;
+    }
+
+    .divo {
+        font-size: 30px;
+    }
+
+    p {
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+
+        .title {
+            font-size: 45px;
+            margin-top: 10px;
+        }
+    
+        .par {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+    
+        .perek {
+            font-size: 45px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+}
+
+@media (max-width: 1000px) and (min-width: 577px){
+.content {
+        margin-top: 140px;
+    }
 }
